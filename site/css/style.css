@@ -1,0 +1,40 @@
+:root {
+  --verde: #1b7f4b;
+  --verde-escuro: #12603a;
+  --fundo: #f3f7f4;
+  --texto: #1d2a22;
+  --cartao: #ffffff;
+  --borda: #d5e3da;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--fundo); color: var(--texto); line-height: 1.5; }
+.container { max-width: 760px; margin: 0 auto; padding: 0 1rem; }
+.topo { background: var(--verde); color: #fff; padding: 2rem 0; }
+.topo h1 { margin: 0 0 .5rem; font-size: 2rem; }
+.sub { margin: 0 0 1.2rem; font-size: 1.1rem; }
+.cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: 12px; padding: 1.2rem; margin: 1.2rem 0; }
+.cartao h2 { margin-top: 0; color: var(--verde-escuro); }
+.botao { display: inline-block; background: var(--verde); color: #fff; border: 0; border-radius: 8px; padding: .8rem 1.2rem; font-size: 1rem; cursor: pointer; text-decoration: none; }
+.botao:hover { background: var(--verde-escuro); }
+.botao.grande { background: #fff; color: var(--verde-escuro); font-weight: 700; padding: 1rem 1.6rem; font-size: 1.15rem; }
+.botao.secundario { background: #fff; color: var(--verde-escuro); border: 2px solid var(--verde); }
+.campo { display: block; margin: 1rem 0; }
+.campo span { display: block; font-weight: 600; margin-bottom: .3rem; }
+.campo input, .campo select { width: 100%; padding: .6rem; font-size: 1rem; border: 1px solid var(--borda); border-radius: 8px; }
+.previa { max-width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+.linha { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; margin-bottom: 1rem; }
+.status { margin: .5rem 0; font-size: .95rem; }
+.aviso { font-size: .85rem; color: #55665c; margin-top: 1rem; }
+.lista { list-style: none; padding: 0; margin: 1rem 0 0; }
+.lista li { border: 1px solid var(--borda); border-radius: 8px; padding: .8rem; margin-bottom: .6rem; }
+.lista .nome { font-weight: 700; }
+.lista .dist { color: var(--verde-escuro); font-weight: 600; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .8rem; margin-bottom: 1rem; }
+.kpi { background: var(--fundo); border-radius: 8px; padding: .8rem; text-align: center; }
+.kpi strong { display: block; font-size: 1.6rem; color: var(--verde-escuro); }
+.grafico .barra-linha { display: flex; align-items: center; gap: .5rem; margin: .4rem 0; }
+.grafico .rotulo { flex: 0 0 110px; font-size: .9rem; }
+.grafico .barra { background: var(--verde); height: 18px; border-radius: 4px; }
+.grafico .valor { font-size: .9rem; font-weight: 600; }
+.rodape { background: var(--verde-escuro); color: #fff; padding: 1rem 0; margin-top: 2rem; font-size: .9rem; }
+@media (min-width: 640px) { .topo h1 { font-size: 2.6rem; } }
