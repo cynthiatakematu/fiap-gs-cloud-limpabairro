@@ -1,0 +1,9 @@
+{
+  "name": "fiap-gs-cloud-limpabairro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LimpaBairro: CitizenTech de gestão comunitária de resíduos. Global Solution FIAP 2026.",
+  "scripts": {
+    "test": "node tests/check-site.js"
+  }
+}
