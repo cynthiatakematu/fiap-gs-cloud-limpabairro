@@ -41,9 +41,9 @@ Como executar localmente: entre na pasta `site` e rode `python3 -m http.server 8
 
 - Project (quadro): https://github.com/users/cynthiatakematu/projects/1, com colunas Todo, In Progress e Done.
 - Issues: história de usuário [#4](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/issues/4) e tarefas [#5](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/issues/5), [#6](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/issues/6) e [#7](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/issues/7), todas com responsável e status.
-- Branches: `main`, `feature/pagina-limpabairro`, `feature/selo-versao` e `docs/readme-evidencias`.
+- Branches: `main`, `feature/pagina-limpabairro`, `feature/selo-versao`, `docs/readme-evidencias` e `docs/quadro-final`.
 - Commits com mensagens descritivas, citando a Issue relacionada.
-- Pull Requests: [#8](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/pull/8) (site e CI/CD), [#9](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/pull/9) (selo de versão 1.1) e o PR deste README, todos com checks de CI aprovados antes do merge.
+- Pull Requests: [#8](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/pull/8) (site e CI/CD), [#9](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/pull/9) (selo de versão 1.1), [#10](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/pull/10) (README e evidências) e [#11](https://github.com/cynthiatakematu/fiap-gs-cloud-limpabairro/pull/11) (quadro final), todos com checks de CI aprovados antes do merge.
 
 ## Workflows do GitHub Actions
 
@@ -87,6 +87,7 @@ Todas as capturas estão em `docs/evidencias/`.
 ![Secret configurado (valor oculto)](docs/evidencias/10-secret-configurado.png)
 ![Primeiro deploy com sucesso](docs/evidencias/11-deploy-1-sucesso.png)
 ![Aplicação publicada na Azure](docs/evidencias/12-site-publicado-v1.png)
+![Site publicado: Ecopontos e painel de gestão](docs/evidencias/12b-site-publicado-v1-ecopontos-painel.png)
 
 **Nova alteração e atualização automática do ambiente**
 
