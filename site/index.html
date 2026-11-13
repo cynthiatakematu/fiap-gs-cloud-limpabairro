@@ -3,12 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LimpaBairro</title>
+  <meta name="description" content="LimpaBairro: CitizenTech de gestão comunitária e preditiva de resíduos em São Paulo.">
+  <title>LimpaBairro | Gestão comunitária de resíduos</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>LimpaBairro</h1>
-  <p>Em construção.</p>
+  <header class="topo">
+    <div class="container">
+      <h1>LimpaBairro</h1>
+      <p class="sub">Denuncie o descarte irregular e descubra onde descartar corretamente em São Paulo.</p>
+      <a class="botao grande" href="#reportar">Reportar Ponto</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="reportar" class="cartao">
+      <h2>1. Reportar ponto de descarte</h2>
+      <p>Tire uma foto, confirme sua localização e envie. Leva menos de um minuto.</p>
+
+      <label class="campo">
+        <span>Foto do descarte</span>
+        <input type="file" id="foto" accept="image/*" capture="environment">
+      </label>
+      <img id="previa" class="previa" alt="Pré-visualização da foto do descarte" hidden>
+
+      <label class="campo">
+        <span>Tipo de resíduo</span>
+        <select id="tipo">
+          <option value="entulho">Entulho de obra</option>
+          <option value="movel">Móveis e inservíveis</option>
+          <option value="domiciliar">Lixo domiciliar</option>
+          <option value="vegetal">Galhos e restos de poda</option>
+        </select>
+      </label>
+
+      <div class="linha">
+        <button type="button" id="btn-gps" class="botao secundario">Usar minha localização</button>
+        <span id="gps-status" class="status" aria-live="polite">Localização não informada.</span>
+      </div>
+
+      <button type="button" id="btn-enviar" class="botao">Enviar relato</button>
+      <p id="msg-envio" class="status" aria-live="polite"></p>
+      <p class="aviso">Privacidade (LGPD): este protótipo não envia a foto a nenhum servidor. Na solução completa, rostos e placas seriam anonimizados antes do armazenamento.</p>
+    </section>
+
+    <section id="ecopontos" class="cartao">
+      <h2>2. Onde descartar</h2>
+      <p>Ecopontos mais próximos de você, com os materiais aceitos.</p>
+      <button type="button" id="btn-ordenar" class="botao secundario">Ordenar pela minha localização</button>
+      <ul id="lista-ecopontos" class="lista"></ul>
+      <p class="aviso">Dados ilustrativos para o protótipo. A camada oficial de Ecopontos vem do GeoSampa.</p>
+    </section>
+
+    <section id="painel" class="cartao">
+      <h2>3. Resumo do painel de gestão</h2>
+      <div class="kpis">
+        <div class="kpi"><strong id="kpi-relatos">0</strong><span>relatos nesta sessão</span></div>
+        <div class="kpi"><strong>6,8 dias</strong><span>tempo médio de atendimento</span></div>
+        <div class="kpi"><strong>3 de 5</strong><span>pontos com reincidência</span></div>
+      </div>
+      <h3>Tempo médio de atendimento por região (dias)</h3>
+      <div id="grafico" class="grafico" role="img" aria-label="Gráfico de barras do tempo médio de atendimento por região"></div>
+      <p class="aviso">Valores ilustrativos do protótipo. Na solução completa, calculados a partir do Portal 156 (Data_Abertura e Data_Conclusao).</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>LimpaBairro | Global Solution FIAP 2026 | Cloud Solutions &amp; Scalable Infrastructure</p>
+    </div>
+  </footer>
+
   <script src="js/app.js"></script>
 </body>
 </html>
