@@ -38,3 +38,4 @@ body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, san
 .grafico .valor { font-size: .9rem; font-weight: 600; }
 .rodape { background: var(--verde-escuro); color: #fff; padding: 1rem 0; margin-top: 2rem; font-size: .9rem; }
 @media (min-width: 640px) { .topo h1 { font-size: 2.6rem; } }
+.versao { display: block; width: fit-content; margin: 0 0 1.2rem; background: rgba(255,255,255,.18); border-radius: 999px; padding: .25rem .8rem; font-size: .9rem; }
